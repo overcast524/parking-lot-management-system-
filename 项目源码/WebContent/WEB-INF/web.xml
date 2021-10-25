@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginHandle</servlet-name>
+    <servlet-class>ServletHandle.LoginHandle</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RoleHandle</servlet-name>
+    <servlet-class>ServletHandle.RoleHandle</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserHandle</servlet-name>
+    <servlet-class>ServletHandle.UserHandle</servlet-class>
+  </servlet>
+  
+   <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CardHandle</servlet-name>
+    <servlet-class>ServletHandle.CardHandle</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FixedHandle</servlet-name>
+    <servlet-class>ServletHandle.FixedHandle</servlet-class>
+  </servlet>
+  
+ <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TempHandle</servlet-name>
+    <servlet-class>ServletHandle.TempHandle</servlet-class>
+  </servlet>
+  
+   <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SeatHandle</servlet-name>
+    <servlet-class>ServletHandle.SeatHandle</servlet-class>
+  </servlet>
+    
+  
+  
+  <servlet-mapping>
+    <servlet-name>LoginHandle</servlet-name>
+    <url-pattern>/LoginHandle</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>RoleHandle</servlet-name>
+    <url-pattern>/RoleHandle</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>UserHandle</servlet-name>
+    <url-pattern>/UserHandle</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>CardHandle</servlet-name>
+    <url-pattern>/CardHandle</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>FixedHandle</servlet-name>
+    <url-pattern>/FixedHandle</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet-mapping>
+    <servlet-name>TempHandle</servlet-name>
+    <url-pattern>/TempHandle</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet-mapping>
+    <servlet-name>SeatHandle</servlet-name>
+    <url-pattern>/SeatHandle</url-pattern>
+  </servlet-mapping>
+ 
+  <welcome-file-list> 
+	<welcome-file>Login.jsp</welcome-file> 
+  </welcome-file-list>
+  
+  <error-page> 
+     <error-code>500</error-code> 
+     <location>/Admin/_Error.jsp</location> 
+  </error-page> 
+  
+</web-app>
